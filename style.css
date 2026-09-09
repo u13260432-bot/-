@@ -1,0 +1,36 @@
+.container{
+    border: solid black 5px;
+    width: 1000px;
+    margin: auto;
+    display: grid;
+   /* grid-template-columns: 100px 200px 300px;*/
+     /*grid-template-columns: 1fr 1fr 1fr ;*/
+     grid-template-rows: repeat(4, 1fr);
+     grid-template-columns: repeat(4, 1fr);
+}
+.item{
+    border: 5px solid rgb(255, 0, 0);
+    background-color: rgb(0, 255, 0);
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.block1{
+    grid-column: span 2;
+}
+.block3{
+    grid-row: span 2;
+}
+.block4{
+    grid-row: span 2;
+}
+.block5{
+    grid-column: span 2;
+}
+.block6{
+    grid-column: span 3;
+}
+.block7{
+    grid-column: span 4;
+}
